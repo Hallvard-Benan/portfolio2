@@ -63,7 +63,8 @@ export const projects = [
     title: "Holiday Helper",
     testUser: { email: "testeruser@stud.noroff.no", password: "testeruser" },
     description: [
-      "A booking website where users can book and publish venues.",
+      "A booking website where users can register accounts, search and filter venues, and book venues on available dates.",
+      "Users can also register as venue managers and publish their own venues",
       "This project was my final exam at Noroff.",
     ],
     image: "/images/Holiday helper desktop.png",
@@ -75,7 +76,7 @@ export const projects = [
     id: 2,
     title: "Price club",
     description: [
-      "A frontend for an online store",
+      "A frontend for an online store with cart functionality.",
       "Built in collaboration with a fellow student at Noroff.",
     ],
     image: "/images/price-club-desktop.png",
@@ -88,8 +89,8 @@ export const projects = [
     title: "Auction House",
     testUser: { email: "testeruser@stud.noroff.no", password: "testeruser" },
     description: [
-      "An auction website, built with React and Tailwind",
-      "Features register and login functionality, search, sort filters and pagination, as well as creating listings, and making bids on other listings.",
+      "An auction website, built with React and Tailwind.",
+      "Features register and login functionality, search, sort filters and pagination. Registered users can create listings, and make bids on other listings.",
     ],
     image: "/images/Auctionhouse-desktop-.webp",
     deploy: "https://the-auctionhouse.netlify.app/",

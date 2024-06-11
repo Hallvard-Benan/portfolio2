@@ -42,7 +42,7 @@ const html = {
   },
 };
 const css = {
-  name: "Next",
+  name: "CSS",
   icon: {
     url: "/icons/css-icon.svg",
     alt: "css Logo",

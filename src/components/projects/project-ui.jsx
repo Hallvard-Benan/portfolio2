@@ -1,4 +1,6 @@
+import { useEffect, useRef } from "react";
 import { FaGithub } from "react-icons/fa";
+
 export default function ProjectUi({
   id,
   title,
@@ -10,8 +12,53 @@ export default function ProjectUi({
   cms,
   stack,
 }) {
+  const projectGlowRef = useRef();
+  const projectRef = useRef();
+
+  useEffect(() => {
+    const handlePointerMove = (e) => {
+      const { clientX, clientY } = e;
+      if (projectGlowRef.current) {
+        const rect = projectRef.current.getBoundingClientRect();
+        const offsetX = clientX - rect.left;
+        const offsetY = clientY - rect.top;
+
+        projectGlowRef.current.animate(
+          { left: `${offsetX}px`, top: `${offsetY}px` },
+          { duration: 3000, fill: "forwards" }
+        );
+      }
+    };
+
+    const projectElement = projectRef.current;
+
+    const handleMouseEnter = () => {
+      document.body.addEventListener("pointermove", handlePointerMove);
+      projectGlowRef.current.style.display = "block";
+    };
+
+    const handleMouseLeave = () => {
+      document.body.removeEventListener("pointermove", handlePointerMove);
+      projectGlowRef.current.style.display = "none";
+    };
+
+    projectElement.addEventListener("mouseenter", handleMouseEnter);
+    projectElement.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      projectElement.removeEventListener("mouseenter", handleMouseEnter);
+      projectElement.removeEventListener("mouseleave", handleMouseLeave);
+      document.body.removeEventListener("pointermove", handlePointerMove);
+    };
+  }, []);
+
   return (
-    <div className="project" id={id}>
+    <div className="project" id={id} ref={projectRef}>
+      <div
+        ref={projectGlowRef}
+        className="project-glow"
+        style={{ display: "none" }}
+      ></div>
       <div className="project__coulumn2">
         <div className="project-img">
           <img src={image} alt={"screenshot of " + title} loading="lazy" />

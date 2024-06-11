@@ -8,7 +8,6 @@ import ContactSection from "./components/contact";
 import BottomNav from "./components/bottomNav";
 
 function App() {
-  // Use useInView for each section
   const { ref: heroRef, inView: heroInView } = useInView({ threshold: 0.55 });
   const { ref: projectsRef, inView: projectsInView } = useInView({
     threshold: 0.1,
@@ -18,7 +17,6 @@ function App() {
     threshold: 0.1,
   });
 
-  // Determine BottomNav visibility
   const bottomNavVisible = !heroInView;
 
   return (

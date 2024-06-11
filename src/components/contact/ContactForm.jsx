@@ -1,12 +1,8 @@
 import { useEffect, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import { IoMdSend } from "react-icons/io";
 import lottie from "lottie-web";
 import { defineElement } from "@lordicon/element";
 
-// define "lord-icon" custom element with default properties
-
-import { cn } from "../../utils";
 export const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
 export default function ContactForm() {

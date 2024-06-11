@@ -1,4 +1,3 @@
-import React from "react";
 import { FaAddressCard, FaFolderOpen } from "react-icons/fa";
 import { FaHouse, FaMessage } from "react-icons/fa6";
 

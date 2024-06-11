@@ -401,8 +401,8 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     var(--clr-bg-l2) 80%
   );
   border-radius: 50%;
-  pointer-events: none; /* Ensure the glow does not interfere with pointer events */
-  transform: translate(-50%, -50%); /* Center the glow around the cursor */
+  pointer-events: none;
+  transform: translate(-50%, -50%);
 }
 
 .project__coulumn2,
@@ -704,7 +704,7 @@ form {
   transform: translateX(-50%);
   border-width: 12px;
   border-style: solid;
-  border-color: #fdfdfd transparent transparent transparent; /* match the background color of your bubble */
+  border-color: #fdfdfd transparent transparent transparent;
 }
 .button-group {
   position: relative;

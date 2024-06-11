@@ -87,11 +87,7 @@ export default function ContactForm() {
         </div>
       </form>
       {/* captcha */}
-      <ReCAPTCHA
-        size="compact"
-        sitekey={siteKey}
-        onChange={handleCaptchaChange}
-      />
+      <ReCAPTCHA size="" sitekey={siteKey} onChange={handleCaptchaChange} />
     </section>
   );
 }

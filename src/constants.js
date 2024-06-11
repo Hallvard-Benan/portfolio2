@@ -59,7 +59,7 @@ const js = {
 
 export const projects = [
   {
-    id: 1,
+    id: "holidayHelper",
     title: "Holiday Helper",
     testUser: { email: "testeruser@stud.noroff.no", password: "testeruser" },
     description: [
@@ -73,7 +73,7 @@ export const projects = [
     stack: [react, tailwind, shadCn],
   },
   {
-    id: 2,
+    id: "priceClub",
     title: "Price club",
     description: [
       "A frontend for an online store with cart functionality.",
@@ -85,7 +85,7 @@ export const projects = [
     stack: [nextJs, tailwind, typeScript],
   },
   {
-    id: 3,
+    id: "auctionHouse",
     title: "Auction House",
     testUser: { email: "testeruser@stud.noroff.no", password: "testeruser" },
     description: [
@@ -98,7 +98,7 @@ export const projects = [
     stack: [react, tailwind, shadCn],
   },
   {
-    id: 4,
+    id: "beyondPace",
     title: "Beyond Pace",
     description: [
       "A running blog that was designed and built for my second semester exam at Noroff.",

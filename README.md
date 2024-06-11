@@ -1,6 +1,6 @@
 # Portfolio
 
-<a href="https://hallvard.netlify.app" target="_blank">![image](/public/images/Skjermbilde%202024-06-11%20kl.%2014.48.25.png)</a>
+<a href="https://hallvardbenan.netlify.app" target="_blank">![image](/public/images/Skjermbilde%202024-06-11%20kl.%2014.48.25.png)</a>
 
 This is my portfolio, where i document my projects as a front end developer.
 

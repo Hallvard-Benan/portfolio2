@@ -80,7 +80,7 @@ export const projects = [
       "Built in collaboration with a fellow student at Noroff.",
     ],
     image: "/images/price-club-desktop.png",
-    deploy: "https://online-shop-six-roan.vercel.app/",
+    deploy: "https://priceclub-onlineshop.vercel.app/",
     github: "https://github.com/PetterMartin/online-shop",
     stack: [nextJs, tailwind, typeScript],
   },
